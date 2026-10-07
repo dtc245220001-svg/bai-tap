@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+}
+
+
+th {
+    height: 50px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    height: 60px;
+    vertical-align: bottom;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 15px;
+}
