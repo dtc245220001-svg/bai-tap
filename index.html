@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch họp công ty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            max-width: 700px;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .content-col {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lịch họp công ty</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Thứ Hai: Có 2 cuộc họp trong cùng 1 ngày -> dùng rowspan="2" -->
+            <tr>
+                <td rowspan="2"><b>Thứ Hai</b><br>(09/10)</td>
+                <td>08:00 - 09:30</td>
+                <td class="content-col">Họp giao ban đầu tuần phòng Kinh doanh</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td class="content-col">Thảo luận kế hoạch Marketing quý 4</td>
+            </tr>
+
+            <!-- Thứ Ba: Cuộc họp kéo dài cả sáng -> gộp ô hoặc minh họa colspan -->
+            <tr>
+                <td><b>Thứ Ba</b><br>(10/10)</td>
+                <td>08:30 - 11:30</td>
+                <td class="content-col">Đào tạo nhân sự mới (Kéo dài cả ca sáng)</td>
+            </tr>
+
+            <!-- Thứ Tư: Dùng colspan gộp cột Giờ & Nội dung cho thông báo chung -->
+            <tr>
+                <td><b>Thứ Tư</b><br>(11/10)</td>
+                <td colspan="2">Nghỉ lễ toàn công ty (Cả ngày không có lịch họp)</td>
+            </tr>
+
+            <!-- Thứ Năm: Dùng rowspan="2" cho 2 ca họp -->
+            <tr>
+                <td rowspan="2"><b>Thứ Năm</b><br>(12/10)</td>
+                <td>13:30 - 15:00</td>
+                <td class="content-col">Họp review tiến độ dự án Website</td>
+            </tr>
+            <tr>
+                <td>15:30 - 17:00</td>
+                <td class="content-col">Gặp gỡ và trao đổi với đối tác</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
