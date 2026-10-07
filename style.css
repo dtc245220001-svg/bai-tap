@@ -1,0 +1,80 @@
+
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    padding: 30px;
+}
+
+
+.main-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+
+#about-me {
+    text-align: center;
+    font-size: 18px;
+    color: #555555;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+h2, .hobby-list {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hobby-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.hobby-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.item-1 {
+    color: #e74c3c; 
+    background-color: #fadbd8;
+}
+
+.item-2 {
+    color: #27ae60; 
+    background-color: #d4efdf;
+}
+
+.item-3 {
+    color: #2980b9; 
+    background-color: #d4e6f1;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#btn-action {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+#btn-action:hover {
+    background-color: #1d6fa5;
+    transform: scale(1.05);
+}
